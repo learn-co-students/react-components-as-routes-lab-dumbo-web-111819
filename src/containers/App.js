@@ -8,6 +8,7 @@ import Home      from '../components/Home';
 import Actors    from '../components/Actors';
 import Directors from '../components/Directors';
 import Movies    from '../components/Movies';
+import Test    from '../components/Test';
 
 
 const App = (props) => {
@@ -16,6 +17,7 @@ const App = (props) => {
       <div className="app">
         <NavBar />
         <Route exact path="/"          component={Home} />
+        <Route exact path="/test"      component={Test} />
         <Route exact path="/actors"    component={Actors} />
         <Route exact path="/directors" component={Directors} />
         <Route exact path="/movies"    component={Movies} />
